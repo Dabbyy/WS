@@ -1,0 +1,124 @@
+@import 'tailwindcss';
+
+/* Custom Theme Variables */
+:root {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-sans);
+    background-color: #f8fafc; /* Light gray background */
+    color: #333; /* Darker text for readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+    background-color: #2563eb; /* Tailwind blue-600 */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #dbeafe; /* Lighter blue */
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: 80px auto 40px; /* Adjust for fixed navbar */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e293b; /* Tailwind slate-900 */
+    text-align: center;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    color: #475569; /* Tailwind slate-600 */
+    line-height: 1.6;
+}
+
+/* Buttons */
+.btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    padding: 15px;
+    text-align: center;
+    background-color: #1e293b; /* Tailwind gray-800 */
+    color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+}
