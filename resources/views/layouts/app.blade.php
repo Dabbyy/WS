@@ -47,7 +47,6 @@
                 <a href="{{ route('home') }}" class="nav-link text-lg font-semibold">Home</a>
                 <a href="{{ route('about') }}" class="nav-link text-lg font-semibold">About</a>
                 <a href="{{ route('contact') }}" class="nav-link text-lg font-semibold">Contact</a>
-                <a href="{{ route('profile') }}" class="nav-link text-lg font-semibold">Profile</a>
             </div>
         </div>
     </nav>
